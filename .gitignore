@@ -242,6 +242,7 @@ _Pvt_Extensions
 *.mid
 *.zip
 *.db
+Dec.bat
 build/
 Build/
 errors.log.txt
