@@ -239,9 +239,7 @@ _Pvt_Extensions
 # Some manual additions
 *.exe
 *.bin
-*.img
 *.mid
-*.bat
 *.zip
 *.db
 build/
