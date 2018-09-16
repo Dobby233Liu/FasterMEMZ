@@ -242,7 +242,7 @@ _Pvt_Extensions
 *.mid
 *.zip
 *.db
-WindowsTrojan/Dec.bat
+*.bat
 build/
 Build/
 errors.log.txt
