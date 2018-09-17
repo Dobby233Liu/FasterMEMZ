@@ -1,6 +1,6 @@
 @echo off
 md Build
-D:\Python27\python.exe Data/genData.py Build/Data.c Build/Data.h
+python Data/genData.py Build/Data.c Build/Data.h
 del Build\Mode.h
 fsutil file createnew Build\Mode.h 0
 rem i686-w64-mingw32-gcc

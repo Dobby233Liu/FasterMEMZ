@@ -8,8 +8,7 @@ script:
     - make
 deploy:
   provider: releases
-  api_key:
-    secure: fc6406457d0a4e90f4e6e47e19807cdda3b28b72
+  api_key: fc6406457d0a4e90f4e6e47e19807cdda3b28b72
   file: 
     - WindowsTrojan/Build/FMEMZ.exe
     - WindowsTrojan/Build/FMEMZ.bat
