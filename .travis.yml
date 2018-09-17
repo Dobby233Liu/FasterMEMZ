@@ -11,11 +11,12 @@ before_deploy:
 deploy:
        skip_cleanup: true
        provider: releases
+       user: "Dobby233Liu"
        api_key: 4f69f7894b4c1826405c3806ebdfe3c940a8c86b
        file: 
             - WindowsTrojan/Build/FMEMZ.exe
             - WindowsTrojan/Build/FMEMZ.bat
        on:
          all_branches: true
-         repo: Dobby233Liu/FasterMEMZ
+         #repo: Dobby233Liu/FasterMEMZ
          tag: true
