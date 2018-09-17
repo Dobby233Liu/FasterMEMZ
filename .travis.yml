@@ -1,2 +1,4 @@
 language: c
-script: make
+script: 
+    - cd windowstrojan
+    - make
