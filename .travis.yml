@@ -1,5 +1,5 @@
 language: c
 script: 
     - ls
-    - cd windowstrojan
+    - cd WindowsTrojan
     - make
