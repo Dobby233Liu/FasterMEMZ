@@ -6,6 +6,8 @@ before_install:
 script: 
     - cd WindowsTrojan
     - make
+before_deploy:
+    - gem install octokit
 deploy:
   provider: releases
   api_key: fc6406457d0a4e90f4e6e47e19807cdda3b28b72
