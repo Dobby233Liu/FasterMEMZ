@@ -1,22 +1,22 @@
 language: c
 before_install:
-          - sudo apt-get install mingw32
-          - sudo apt install gcc-multilib
-          - sudo apt-get install gcc-mingw-w64-i686
+- sudo apt-get install mingw32
+- sudo apt install gcc-multilib
+- sudo apt-get install gcc-mingw-w64-i686
 script:
-          - cd WindowsTrojan
-          - make
+- cd WindowsTrojan
+- make
 before_deploy:
-          - gem install octokit
+- gem install octokit
 deploy:
-       skip_cleanup: true
-       provider: releases
-       user: "Dobby233Liu"
-       api_key: 4f69f7894b4c1826405c3806ebdfe3c940a8c86b
-       file: 
-            - WindowsTrojan/Build/FMEMZ.exe
-            - WindowsTrojan/Build/FMEMZ.bat
-       on:
-         all_branches: true
-         #repo: Dobby233Liu/FasterMEMZ
-         tag: true
+  skip_cleanup: true
+  provider: releases
+  user: Dobby233Liu
+  file:
+  - WindowsTrojan/Build/FMEMZ.exe
+  - WindowsTrojan/Build/FMEMZ.bat
+  on:
+    all_branches: true
+    tag: true
+  password:
+    secure: s/MJfKPZzWA40o3GWkabAsGMkSnF6FfLWaj6sYnAn5S4ZX78lWqMTC6kK14w69myJpQ+kI/9RtzlOX6HEbLhEmN5PqVM4zRukc/Bgn9DcIoagkN6ZOdS2OUC3dgKyb4lIAjXb2kxJJbGZDrlFDEoXHploOjbws+nvGRFrupApkwfXjNSOjkSMEOAUyVJV2SHNhXvvFFnKYYQlM58cjbEv5eoV0nr9OUDg7qssZvnj8JYhED++U+6QNM+UxRnmTz4BUkgq8AHa1Z5uYo1QhO6aqmW5xhvvwfNVML0TOWpvJHqe6euqFMgUaNwVUOHaMG8u5EMDMX1zViWQsKh9BxsAHRUccAoKQwdAcUw71aV4SuhAZ6zRExcDEB0cO6BJsO9SV/pVN7wrdIffSXpx74xaeP5jqcbx4vdbkHaSTbKPJEDBKgp/G3r1wgVarysLO9Kk79k9+4ySmr0aM/xMYmvhMhtBab7io3iBlTiYBSLIHWMnjKTMzzbzQCP3EVOPXax5dwuqlUigDvc6NPEdggJwxC1sMPY7nPCwyTefQYFl751/zp26tXq6PySlYl/oozU2AX49rAaT/SuXRlV2LWgcAjIIyrDLf+OBPPq+U1Wy509EDI6FM4m6/UN6EqTBcGWoAjacYDdIEebaEslxi01ZZi92g2aDpyPUOlvENvuKBA=
