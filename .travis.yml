@@ -1,5 +1,5 @@
 language: c
 script: 
-    - cd fastermemz
+    - ls
     - cd windowstrojan
     - make
